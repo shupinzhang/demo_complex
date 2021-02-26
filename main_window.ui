@@ -1,0 +1,2566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>1920</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1080</width>
+      <height>1920</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="page_home">
+     <widget class="QPushButton" name="pbtn_ec_pickup">
+      <property name="geometry">
+       <rect>
+        <x>555</x>
+        <y>1222</y>
+        <width>388</width>
+        <height>274</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>EC取件</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_preorder">
+      <property name="geometry">
+       <rect>
+        <x>158</x>
+        <y>1213</y>
+        <width>418</width>
+        <height>302</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>預購取餐</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_home_bg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1080</width>
+        <height>1920</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>120</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>(Background)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_onsite">
+      <property name="geometry">
+       <rect>
+        <x>158</x>
+        <y>944</y>
+        <width>802</width>
+        <height>302</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>現場購買</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_test">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>0</y>
+        <width>341</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>系統測試</string>
+      </property>
+     </widget>
+     <zorder>lbl_home_bg</zorder>
+     <zorder>pbtn_onsite</zorder>
+     <zorder>pbtn_preorder</zorder>
+     <zorder>pbtn_ec_pickup</zorder>
+     <zorder>pbtn_test</zorder>
+    </widget>
+    <widget class="QWidget" name="page_onsite_option">
+     <widget class="QPushButton" name="pbtn_onsite_checkout">
+      <property name="geometry">
+       <rect>
+        <x>871</x>
+        <y>1552</y>
+        <width>199</width>
+        <height>199</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>結帳</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_onsite_option_bg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1080</width>
+        <height>1920</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>(Background)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>260</y>
+        <width>1081</width>
+        <height>1191</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="layout_onsite_product">
+       <property name="leftMargin">
+        <number>70</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>75</number>
+       </property>
+       <property name="horizontalSpacing">
+        <number>32</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>12</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="pbtn_onsite_prev">
+      <property name="geometry">
+       <rect>
+        <x>415</x>
+        <y>1495</y>
+        <width>83</width>
+        <height>83</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;&lt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_onsite_next">
+      <property name="geometry">
+       <rect>
+        <x>542</x>
+        <y>1495</y>
+        <width>83</width>
+        <height>83</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&gt;&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>126</y>
+        <width>1082</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="layout_onsite_option">
+       <property name="leftMargin">
+        <number>170</number>
+       </property>
+       <property name="rightMargin">
+        <number>170</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="pbtn_onsite_bento">
+         <property name="minimumSize">
+          <size>
+           <width>242</width>
+           <height>105</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Noto Sans CJK TC</family>
+           <pointsize>24</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>便當</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbtn_onsite_drink">
+         <property name="minimumSize">
+          <size>
+           <width>242</width>
+           <height>105</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Noto Sans CJK TC</family>
+           <pointsize>24</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>飲料</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbtn_onsite_dessert">
+         <property name="minimumSize">
+          <size>
+           <width>242</width>
+           <height>105</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Noto Sans CJK TC</family>
+           <pointsize>24</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>甜點</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableView" name="tView_onsite_option">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>1655</y>
+        <width>880</width>
+        <height>250</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC Medium</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::NoSelection</enum>
+      </property>
+      <property name="showGrid">
+       <bool>false</bool>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>55</number>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderMinimumSectionSize">
+       <number>55</number>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>55</number>
+      </attribute>
+     </widget>
+     <widget class="QLabel" name="lbl_onsite_option_total">
+      <property name="geometry">
+       <rect>
+        <x>765</x>
+        <y>1590</y>
+        <width>106</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>32</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>365</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_onsite_option_total_hint">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>1590</y>
+        <width>80</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>32</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>NT.</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_onsite_option_hint">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>1720</y>
+        <width>1080</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>32</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(128, 128, 128);</string>
+      </property>
+      <property name="text">
+       <string>請選購商品</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <zorder>lbl_onsite_option_bg</zorder>
+     <zorder>gridLayoutWidget</zorder>
+     <zorder>pbtn_onsite_prev</zorder>
+     <zorder>pbtn_onsite_next</zorder>
+     <zorder>horizontalLayoutWidget</zorder>
+     <zorder>tView_onsite_option</zorder>
+     <zorder>pbtn_onsite_checkout</zorder>
+     <zorder>lbl_onsite_option_total</zorder>
+     <zorder>lbl_onsite_option_total_hint</zorder>
+     <zorder>lbl_onsite_option_hint</zorder>
+    </widget>
+    <widget class="QWidget" name="page_onsite_confirm">
+     <widget class="QLabel" name="lbl_onsite_confirm_bg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1080</width>
+        <height>1920</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>(Background)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_product_confirm">
+      <property name="geometry">
+       <rect>
+        <x>334</x>
+        <y>1374</y>
+        <width>412</width>
+        <height>112</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>確認</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_product_close">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>327</y>
+        <width>154</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC Regular</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+border: none;</string>
+      </property>
+      <property name="text">
+       <string>關閉(39)</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_pdt_name">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>910</y>
+        <width>520</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC Medium</family>
+        <pointsize>40</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(77, 77, 77);</string>
+      </property>
+      <property name="text">
+       <string>Product Name</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_pdt_image">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>440</y>
+        <width>460</width>
+        <height>460</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Product Image</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_pdt_price">
+      <property name="geometry">
+       <rect>
+        <x>276</x>
+        <y>1035</y>
+        <width>200</width>
+        <height>78</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>32</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(75, 75, 75);</string>
+      </property>
+      <property name="text">
+       <string>NT. 100</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_pdt_remaining">
+      <property name="geometry">
+       <rect>
+        <x>886</x>
+        <y>1035</y>
+        <width>71</width>
+        <height>78</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>32</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(170, 85, 0);</string>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_pdt_total_amount">
+      <property name="geometry">
+       <rect>
+        <x>276</x>
+        <y>1253</y>
+        <width>200</width>
+        <height>78</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>32</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(170, 85, 0);</string>
+      </property>
+      <property name="text">
+       <string>NT. 100</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_one">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>1141</y>
+        <width>80</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>32</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 104, 55);
+border-radius:10px;</string>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_two">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>1141</y>
+        <width>80</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>32</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(200, 200, 200);
+background-color: rgb(255, 255, 255);
+border: 2px solid rgb(219, 219, 219);
+border-radius:10px;</string>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_three">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>1141</y>
+        <width>80</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>32</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(200, 200, 200);
+background-color: rgb(255, 255, 255);
+border: 2px solid rgb(219, 219, 219);
+border-radius:10px;</string>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_four">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>1141</y>
+        <width>80</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>32</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(200, 200, 200);
+background-color: rgb(255, 255, 255);
+border: 2px solid rgb(219, 219, 219);
+border-radius:10px;</string>
+      </property>
+      <property name="text">
+       <string>4</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_five">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>1141</y>
+        <width>80</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>32</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(200, 200, 200);
+background-color: rgb(255, 255, 255);
+border: 2px solid rgb(219, 219, 219);
+border-radius:10px;</string>
+      </property>
+      <property name="text">
+       <string>5</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_onsite_cart">
+     <widget class="QLabel" name="lbl_onsite_cart_bg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1080</width>
+        <height>1920</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>(Background)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_onsite_checkout">
+     <widget class="QLabel" name="lbl_onsite_checkout_bg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1080</width>
+        <height>1920</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>(Background)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_checkout_back">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>1488</y>
+        <width>285</width>
+        <height>112</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(119, 119, 119);</string>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_checkout_confirm">
+      <property name="geometry">
+       <rect>
+        <x>556</x>
+        <y>1488</y>
+        <width>285</width>
+        <height>112</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>確認</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_checkout_total">
+      <property name="geometry">
+       <rect>
+        <x>475</x>
+        <y>1328</y>
+        <width>321</width>
+        <height>89</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>50</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 104, 55);</string>
+      </property>
+      <property name="text">
+       <string>NT. 365</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tView_onsite_checkout">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>465</y>
+        <width>813</width>
+        <height>750</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC Medium</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::NoSelection</enum>
+      </property>
+      <property name="showGrid">
+       <bool>false</bool>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>55</number>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderMinimumSectionSize">
+       <number>55</number>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>55</number>
+      </attribute>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_payment_option">
+     <widget class="QLabel" name="lbl_payment_option_bg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1080</width>
+        <height>1920</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>(Background)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_payment_option_back">
+      <property name="geometry">
+       <rect>
+        <x>398</x>
+        <y>1620</y>
+        <width>285</width>
+        <height>112</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(119, 119, 119);</string>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_payment_easycard">
+      <property name="geometry">
+       <rect>
+        <x>281</x>
+        <y>1248</y>
+        <width>518</width>
+        <height>172</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>悠遊卡</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_payment_creditcard">
+      <property name="geometry">
+       <rect>
+        <x>281</x>
+        <y>1076</y>
+        <width>518</width>
+        <height>172</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>信用卡</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_payment_famiPay">
+      <property name="geometry">
+       <rect>
+        <x>281</x>
+        <y>904</y>
+        <width>518</width>
+        <height>172</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>My FamiPay</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_payment_hint">
+     <widget class="QLabel" name="lbl_payment_hint_bg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1080</width>
+        <height>1920</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>(Background)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_payment_hint_back">
+      <property name="geometry">
+       <rect>
+        <x>735</x>
+        <y>572</y>
+        <width>154</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);
+border: none;</string>
+      </property>
+      <property name="text">
+       <string>返回(39)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_payment_total">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>673</y>
+        <width>380</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>60</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>NT. 335</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_einvoice_option">
+     <widget class="QLabel" name="lbl_einvoice_option_bg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1080</width>
+        <height>1920</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>(Background)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_einvoice_option_back">
+      <property name="geometry">
+       <rect>
+        <x>398</x>
+        <y>1620</y>
+        <width>285</width>
+        <height>112</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(119, 119, 119);</string>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_einvoice_print">
+      <property name="geometry">
+       <rect>
+        <x>281</x>
+        <y>1250</y>
+        <width>518</width>
+        <height>172</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>列印紙本</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_einvoice_lovecode">
+      <property name="geometry">
+       <rect>
+        <x>281</x>
+        <y>1075</y>
+        <width>518</width>
+        <height>172</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>愛心捐贈</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_einvoice_carrier">
+      <property name="geometry">
+       <rect>
+        <x>281</x>
+        <y>899</y>
+        <width>518</width>
+        <height>172</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>手機載具</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_einvoice_hint">
+     <widget class="QLabel" name="lbl_einvoice_hint_bg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1080</width>
+        <height>1920</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>(Background)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_einvoice_code">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>640</y>
+        <width>540</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC Regular</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;
+color: rgb(48, 48, 48);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>請輸入統一發票</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_einvoice_hint">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>715</y>
+        <width>540</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="NumInput" name="num_input" native="true">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>760</y>
+        <width>480</width>
+        <height>440</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_einvoice_hint_arrow">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>1420</y>
+        <width>1080</width>
+        <height>128</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC Regular</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>↓↓↓</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_einvoice_lovecode">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>670</y>
+        <width>540</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC Medium</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(64, 64, 64);</string>
+      </property>
+      <property name="text">
+       <string>愛心碼機構</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_einvoice_hint_confirm">
+      <property name="geometry">
+       <rect>
+        <x>556</x>
+        <y>1112</y>
+        <width>246</width>
+        <height>127</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>確認</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_einvoice_hint_back">
+      <property name="geometry">
+       <rect>
+        <x>278</x>
+        <y>1112</y>
+        <width>246</width>
+        <height>127</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(119, 119, 119);</string>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_einvoice_carrier">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>1060</y>
+        <width>540</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC Medium</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(64, 64, 64);</string>
+      </property>
+      <property name="text">
+       <string>載具號碼</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_onsite_result">
+     <widget class="QPushButton" name="pbtn_onsite_open_A">
+      <property name="geometry">
+       <rect>
+        <x>117</x>
+        <y>648</y>
+        <width>234</width>
+        <height>96</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>開啟A櫃</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_onsite_open_B">
+      <property name="geometry">
+       <rect>
+        <x>117</x>
+        <y>648</y>
+        <width>234</width>
+        <height>96</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>開啟B櫃</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_onsite_open_D">
+      <property name="geometry">
+       <rect>
+        <x>117</x>
+        <y>1000</y>
+        <width>234</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(170, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>請至取貨口
+領取商品</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_onsite_finish">
+      <property name="geometry">
+       <rect>
+        <x>263</x>
+        <y>1608</y>
+        <width>555</width>
+        <height>125</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>列印收據</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_onsite_result_bg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1080</width>
+        <height>1920</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>(Background)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_onsite_result_A">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>420</y>
+        <width>400</width>
+        <height>180</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>10 - 杏桃乳酪麵包
+15 - 杏桃乳酪舒芙蕾</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_onsite_result_B">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>420</y>
+        <width>400</width>
+        <height>180</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>18 - 一杯兩杯三杯雞
+23 - 好想鯖鯖魚</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_onsite_result_D">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>830</y>
+        <width>400</width>
+        <height>180</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>海鹽檸檬飲
+可樂ＣＡＮ</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_onsite_result_hint">
+      <property name="geometry">
+       <rect>
+        <x>359</x>
+        <y>1750</y>
+        <width>362</width>
+        <height>68</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>! 請先關閉以下櫃門 !</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_onsite_result_door_hint">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>1822</y>
+        <width>480</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>A櫃11號, B櫃15號</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_onsite_open_hint_A">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>656</y>
+        <width>135</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>--&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_onsite_open_hint_D">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>1021</y>
+        <width>135</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>--&gt;</string>
+      </property>
+     </widget>
+     <zorder>lbl_onsite_result_bg</zorder>
+     <zorder>pbtn_onsite_open_A</zorder>
+     <zorder>pbtn_onsite_open_D</zorder>
+     <zorder>pbtn_onsite_open_B</zorder>
+     <zorder>pbtn_onsite_finish</zorder>
+     <zorder>lbl_onsite_result_A</zorder>
+     <zorder>lbl_onsite_result_B</zorder>
+     <zorder>lbl_onsite_result_D</zorder>
+     <zorder>lbl_onsite_result_hint</zorder>
+     <zorder>lbl_onsite_result_door_hint</zorder>
+     <zorder>lbl_onsite_open_hint_A</zorder>
+     <zorder>lbl_onsite_open_hint_D</zorder>
+    </widget>
+    <widget class="QWidget" name="page_preorder_hint">
+     <widget class="QPushButton" name="pbtn_preorder_hint_back">
+      <property name="geometry">
+       <rect>
+        <x>278</x>
+        <y>1085</y>
+        <width>246</width>
+        <height>127</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(119, 119, 119);</string>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_preorder_code">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>960</y>
+        <width>480</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>26</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;
+color: rgb(48, 48, 48);</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>或輸入訂餐代碼</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_preorder_hint_bg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1080</width>
+        <height>1920</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>(Background)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_preorder_hint_confirm">
+      <property name="geometry">
+       <rect>
+        <x>556</x>
+        <y>1085</y>
+        <width>246</width>
+        <height>127</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>確認</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_preorder_hint_arrow">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>1250</y>
+        <width>1080</width>
+        <height>128</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>32</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>▼</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <zorder>lbl_preorder_hint_bg</zorder>
+     <zorder>pbtn_preorder_hint_back</zorder>
+     <zorder>lineEdit_preorder_code</zorder>
+     <zorder>pbtn_preorder_hint_confirm</zorder>
+     <zorder>lbl_preorder_hint_arrow</zorder>
+    </widget>
+    <widget class="QWidget" name="page_preorder_confirm">
+     <widget class="QLabel" name="lbl_preorder_confirm_bg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1080</width>
+        <height>1920</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>(Background)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_preorder_confirm">
+      <property name="geometry">
+       <rect>
+        <x>556</x>
+        <y>1568</y>
+        <width>246</width>
+        <height>127</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>確認</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_preorder_back">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>1568</y>
+        <width>246</width>
+        <height>127</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(119, 119, 119);</string>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_preorder_detail">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>402</y>
+        <width>731</width>
+        <height>160</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC Medium</family>
+        <pointsize>24</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 104, 55);</string>
+      </property>
+      <property name="text">
+       <string>會員手機：09*****206
+訂單編號：MG1355975
+總金額：NT. 150</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tView_preorder_confirm">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>690</y>
+        <width>813</width>
+        <height>730</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC Medium</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::NoSelection</enum>
+      </property>
+      <property name="showGrid">
+       <bool>false</bool>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>50</number>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderMinimumSectionSize">
+       <number>55</number>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>55</number>
+      </attribute>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_preorder_result">
+     <widget class="QPushButton" name="pbtn_preorder_finish">
+      <property name="geometry">
+       <rect>
+        <x>263</x>
+        <y>1170</y>
+        <width>555</width>
+        <height>125</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>列印收據</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_preorder_open">
+      <property name="geometry">
+       <rect>
+        <x>122</x>
+        <y>976</y>
+        <width>234</width>
+        <height>96</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>取餐</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_preorder_result_bg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1080</width>
+        <height>1920</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>(Background)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_preorder_result">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>752</y>
+        <width>400</width>
+        <height>180</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>11 - 就醬烤雞腿</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_preorder_result_hint">
+      <property name="geometry">
+       <rect>
+        <x>359</x>
+        <y>1305</y>
+        <width>362</width>
+        <height>68</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>! 請先關閉以下櫃門 !</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_preorder_result_door_hint">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>1372</y>
+        <width>480</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>B櫃11號</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_preorder_open_hint">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>985</y>
+        <width>135</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>--&gt;</string>
+      </property>
+     </widget>
+     <zorder>lbl_preorder_result_bg</zorder>
+     <zorder>pbtn_preorder_finish</zorder>
+     <zorder>pbtn_preorder_open</zorder>
+     <zorder>lbl_preorder_result</zorder>
+     <zorder>lbl_preorder_result_hint</zorder>
+     <zorder>lbl_preorder_result_door_hint</zorder>
+     <zorder>lbl_preorder_open_hint</zorder>
+    </widget>
+    <widget class="QWidget" name="page_ec_pickup_hint">
+     <widget class="QLineEdit" name="lineEdit_ec_pickup_code">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>960</y>
+        <width>480</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>26</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;
+color: rgb(48, 48, 48);</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>或輸入包裹條碼</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_ec_pickup_hint_bg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1080</width>
+        <height>1920</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>(Background)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_ec_pickup_hint_back">
+      <property name="geometry">
+       <rect>
+        <x>278</x>
+        <y>1085</y>
+        <width>246</width>
+        <height>127</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(119, 119, 119);</string>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_ec_pickup_hint_confirm">
+      <property name="geometry">
+       <rect>
+        <x>556</x>
+        <y>1085</y>
+        <width>246</width>
+        <height>127</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>確認</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_ec_pickup_hint_arrow">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>1250</y>
+        <width>1080</width>
+        <height>128</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>32</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>▼</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <zorder>lbl_ec_pickup_hint_bg</zorder>
+     <zorder>lineEdit_ec_pickup_code</zorder>
+     <zorder>pbtn_ec_pickup_hint_confirm</zorder>
+     <zorder>lbl_ec_pickup_hint_arrow</zorder>
+     <zorder>pbtn_ec_pickup_hint_back</zorder>
+    </widget>
+    <widget class="QWidget" name="page_ec_pickup_result">
+     <widget class="QPushButton" name="pbtn_ec_pickup_finish">
+      <property name="geometry">
+       <rect>
+        <x>263</x>
+        <y>1265</y>
+        <width>555</width>
+        <height>125</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>列印收據</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_ec_pickup_open">
+      <property name="geometry">
+       <rect>
+        <x>582</x>
+        <y>1050</y>
+        <width>235</width>
+        <height>96</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>開櫃</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_ec_pickup_result_bg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1080</width>
+        <height>1920</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>(Background)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_ec_pickup_result_hint">
+      <property name="geometry">
+       <rect>
+        <x>359</x>
+        <y>1400</y>
+        <width>362</width>
+        <height>68</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>! 請先關閉以下櫃門 !</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_ec_pickup_result_door_hint">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>1472</y>
+        <width>480</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>C櫃7號</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_ec_pickup_open_hint">
+      <property name="geometry">
+       <rect>
+        <x>465</x>
+        <y>1059</y>
+        <width>135</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>--&gt;</string>
+      </property>
+     </widget>
+     <zorder>lbl_ec_pickup_result_bg</zorder>
+     <zorder>pbtn_ec_pickup_open</zorder>
+     <zorder>pbtn_ec_pickup_finish</zorder>
+     <zorder>lbl_ec_pickup_result_hint</zorder>
+     <zorder>lbl_ec_pickup_result_door_hint</zorder>
+     <zorder>lbl_ec_pickup_open_hint</zorder>
+    </widget>
+    <widget class="QWidget" name="page_finish">
+     <widget class="QLabel" name="lbl_finish_hint">
+      <property name="geometry">
+       <rect>
+        <x>268</x>
+        <y>498</y>
+        <width>545</width>
+        <height>575</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>48</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>THANK YOU</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbtn_home">
+      <property name="geometry">
+       <rect>
+        <x>446</x>
+        <y>1120</y>
+        <width>188</width>
+        <height>188</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK TC</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>回首頁</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_finish_bg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1080</width>
+        <height>1920</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>(Background)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <zorder>lbl_finish_bg</zorder>
+     <zorder>pbtn_home</zorder>
+     <zorder>lbl_finish_hint</zorder>
+    </widget>
+    <widget class="QWidget" name="page_test">
+     <widget class="QWidget" name="gridLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>190</y>
+        <width>971</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="2" column="0">
+        <widget class="QLabel" name="lbl_number">
+         <property name="font">
+          <font>
+           <family>Noto Sans CJK TC</family>
+           <pointsize>24</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>編號</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="lbl_port">
+         <property name="font">
+          <font>
+           <family>Noto Sans CJK TC</family>
+           <pointsize>24</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>串列埠</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="pbtn_test_open">
+         <property name="font">
+          <font>
+           <family>Noto Sans CJK TC</family>
+           <pointsize>24</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>開啟</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>400</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="lbl_station">
+         <property name="font">
+          <font>
+           <family>Noto Sans CJK TC</family>
+           <pointsize>24</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>站號</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="2">
+        <widget class="QComboBox" name="cbBox_port">
+         <property name="font">
+          <font>
+           <family>Noto Sans CJK TC</family>
+           <pointsize>24</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" colspan="2">
+        <widget class="QSpinBox" name="spBox_station">
+         <property name="font">
+          <font>
+           <family>Noto Sans CJK TC</family>
+           <pointsize>24</pointsize>
+          </font>
+         </property>
+         <property name="maximum">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1" colspan="2">
+        <widget class="QSpinBox" name="spBox_number">
+         <property name="font">
+          <font>
+           <family>Noto Sans CJK TC</family>
+           <pointsize>24</pointsize>
+          </font>
+         </property>
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>36</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QVideoWidget" name="videoWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>103</y>
+      <width>1080</width>
+      <height>607</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbtn_home_upper">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>16</y>
+      <width>160</width>
+      <height>86</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Noto Sans CJK TC</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Home</string>
+    </property>
+   </widget>
+   <widget class="KeyboardInput" name="keyboard_input" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>1420</y>
+      <width>1080</width>
+      <height>500</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>NumInput</class>
+   <extends>QWidget</extends>
+   <header location="global">num_input.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QVideoWidget</class>
+   <extends>QWidget</extends>
+   <header>qvideowidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>KeyboardInput</class>
+   <extends>QWidget</extends>
+   <header location="global">keyboard_input.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
