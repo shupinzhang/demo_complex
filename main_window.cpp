@@ -103,7 +103,8 @@ void MainWindow::initUI()
     player->setPlaylist(playlist);
     player->setVideoOutput(ui->videoWidget);
     playlist->setPlaybackMode(QMediaPlaylist::Loop);
-    player->play();
+    //player->play();
+    ui->lbl_ad_display->setPixmap(QPixmap(QString(dir_ad) + "ad.jpg"));
 
     // initialize home button
     QPixmap home_upper_pixmap(resources_path + "btn_home_upper.png");
@@ -955,9 +956,11 @@ void MainWindow::page_changed(int index)
         current_page_ == PaymentOption ||
         current_page_ == EinvoiceOption) {
         ui->videoWidget->show();
+        ui->lbl_ad_display->show();
     }
     else {
         ui->videoWidget->hide();
+        ui->lbl_ad_display->hide();
     }
 
     if (current_page_ == PreOrderHint ||
