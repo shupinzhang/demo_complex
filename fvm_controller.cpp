@@ -144,14 +144,14 @@ bool FVMController::readDoorStatus(int station)
     door_status.clear();
     for(int i = 0; i < 48; i += 8) {
         char status = rx_data.at(3 + i / 8);
-        door_status.append((status & 0x01));
-        door_status.append((status & 0x02));
-        door_status.append((status & 0x04));
-        door_status.append((status & 0x08));
-        door_status.append((status & 0x10));
-        door_status.append((status & 0x20));
-        door_status.append((status & 0x40));
-        door_status.append((status & 0x80));
+        door_status.append(!(status & 0x01));
+        door_status.append(!(status & 0x02));
+        door_status.append(!(status & 0x04));
+        door_status.append(!(status & 0x08));
+        door_status.append(!(status & 0x10));
+        door_status.append(!(status & 0x20));
+        door_status.append(!(status & 0x40));
+        door_status.append(!(status & 0x80));
     }
     door_status_map_.insert(station, door_status);
     emit readDoorStatusResponse(station, true);
