@@ -16,10 +16,10 @@
 
 #ifdef _DEV_DEBUG_
 #ifdef _WIN32
-#define ipc_config      "D:/Qt Projects/_Practice/demo_familyMart/data/ipc.json"
-#define dir_ad          "D:/Qt Projects/_Practice/demo_familyMart/data/ad/"
-#define dir_image       "D:/Qt Projects/_Practice/demo_familyMart/data/image/"
-#define dir_resources   "D:/Qt Projects/_Practice/demo_familyMart/resources/"
+#define ipc_config      "D:/Qt Projects/_HillEver/demo_complex/data/ipc.json"
+#define dir_ad          "D:/Qt Projects/_HillEver/demo_complex/data/ad/"
+#define dir_image       "D:/Qt Projects/_HillEver/demo_complex/data/image/"
+#define dir_resources   "D:/Qt Projects/_HillEver/demo_complex/resources/"
 #else
 #define ipc_config      "/home/dev/demo_family_mart/data/ipc.json"
 #define dir_ad          "/home/dev/demo_family_mart/data/ad/"
