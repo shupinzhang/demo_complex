@@ -2539,6 +2539,27 @@ background-color: rgba(255, 255, 255, 0);</string>
      </rect>
     </property>
    </widget>
+   <widget class="QLabel" name="lbl_brand_upper">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1080</width>
+      <height>102</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>(BrandImage)</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>stackedWidget</zorder>
+   <zorder>videoWidget</zorder>
+   <zorder>keyboard_input</zorder>
+   <zorder>lbl_brand_upper</zorder>
+   <zorder>pbtn_home_upper</zorder>
   </widget>
  </widget>
  <customwidgets>

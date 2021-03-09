@@ -88,6 +88,9 @@ void MainWindow::initUI()
     transparent_stylesheet.append("QPushButton" + transparent_effect);
     transparent_stylesheet.append("QPushButton:pressed" + transparent_effect);
 
+    // initial brand label
+    ui->lbl_brand_upper->setPixmap(QPixmap(resources_path + "_HE.png"));
+
     // initial media player
     QMediaPlayer *player = new QMediaPlayer(this);
     QMediaPlaylist *playlist = new QMediaPlaylist(player);
@@ -281,6 +284,9 @@ void MainWindow::initUI()
     connect(ui->pbtn_payment_creditcard, SIGNAL(released()), this, SLOT(pbtn_payment_option_released()));
     connect(ui->pbtn_payment_easycard, SIGNAL(pressed()), this, SLOT(pbtn_payment_option_pressed()));
     connect(ui->pbtn_payment_easycard, SIGNAL(released()), this, SLOT(pbtn_payment_option_released()));
+    ui->pbtn_payment_easycard->setGeometry(ui->pbtn_payment_creditcard->geometry());
+    ui->pbtn_payment_creditcard->setGeometry(ui->pbtn_payment_famiPay->geometry());
+    ui->pbtn_payment_famiPay->hide();
 
     // initialize payment hint page
     QPixmap payment_hint_bg_pixmap(resources_path + "P6_payment_hint.jpg");
@@ -920,6 +926,18 @@ void MainWindow::page_changed(int index)
         }
         ui->cbBox_port->setCurrentIndex(0);
         break;
+    }
+
+    if (current_page_ == Home ||
+        current_page_ == OnSiteConfirm ||
+        current_page_ == PaymentHint ||
+        current_page_ == EinvoiceHint ||
+        current_page_ == PreOrderHint ||
+        current_page_ == ECPickupHint) {
+        ui->lbl_brand_upper->hide();
+    }
+    else {
+        ui->lbl_brand_upper->show();
     }
 
     if (current_page_ == OnSiteOption ||
