@@ -21,16 +21,16 @@
 #define dir_image       "D:/Qt Projects/_HillEver/demo_complex/data/image/"
 #define dir_resources   "D:/Qt Projects/_HillEver/demo_complex/resources/"
 #else
-#define ipc_config      "/home/dev/demo_family_mart/data/ipc.json"
-#define dir_ad          "/home/dev/demo_family_mart/data/ad/"
-#define dir_image       "/home/dev/demo_family_mart/data/image/"
-#define dir_resources   "/home/dev/demo_family_mart/resources/"
+#define ipc_config      "/home/dev/Qt Projects/demo_complex/data/ipc.json"
+#define dir_ad          "/home/dev/Qt Projects/demo_complex/data/ad/"
+#define dir_image       "/home/dev/Qt Projects/demo_complex/data/image/"
+#define dir_resources   "/home/dev/Qt Projects/demo_complex/resources/"
 #endif
 #else
-#define ipc_config      "/home/dev/demo_family_mart/data/ipc.json"
-#define dir_ad          "/home/dev/demo_family_mart/data/ad/"
-#define dir_image       "/home/dev/demo_family_mart/data/image/"
-#define dir_resources   "/home/dev/demo_family_mart/resources/"
+#define ipc_config      "/home/dev/demo_complex/data/ipc.json"
+#define dir_ad          "/home/dev/demo_complex/data/ad/"
+#define dir_image       "/home/dev/demo_complex/data/image/"
+#define dir_resources   "/home/dev/demo_complex/resources/"
 #endif
 
 QT_BEGIN_NAMESPACE
